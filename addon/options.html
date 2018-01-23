@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+ </head>
+<body>    
+    <div class="form-box">
+        <div class="form-top">
+            <h2>Add Dictionary <img style="width: 10%; height: 10%" src="icon.png" align="right"/> </h2> 
+        </div>
+        <div class="form-bottom">
+            <form id="add-dictionary" action="">
+                <div class="form-group">
+                    <input class="form-control" type="text" id="name" placeholder="Enter Dictionary Name" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="url" id="url" pattern="[^\s]+%s[^\s]*" placeholder="Enter URL" required>
+                    <p><small>
+                        Insert %s in the URL where the search terms should appear. 
+                        <br /> Example: https://www.google.ca/search?q=%s 
+                    </small></p>        
+                </div>
+
+                <button type="submit" id="save" class="btn-default">Submit</button>
+            </form>
+        </div>
+        <div class="form-top">
+            <h2>Dictionaries:</h2>
+        </div>
+        <div class="form-bottom">
+            <ul id="dictionaries"></ul>
+        </div>
+    </div>
+
+
+    <h2></h2>
+        
+    
+</body>
+<script type="text/javascript" src="options.js"></script>
+</html>
